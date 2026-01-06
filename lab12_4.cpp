@@ -1,8 +1,14 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
+void mySwap(int &, int &);
+void mySwap(string &, string &);
+void mySwap(char &, char &);
+
 int main(){
+	
 	int x, y;
 	string a, b;
 	char p, q;
@@ -29,4 +35,27 @@ int main(){
 
 	return 0;
 }
+
+void mySwap(int &x, int &y) {
+
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+void mySwap(string &x, string &y) {
+
+    string temp = x;
+    x = y;
+    y = temp;
+}
+
+void mySwap(char &x, char &y) {
+
+    char temp = x;
+    x = y;
+    y = temp;
+}
+
+
 
